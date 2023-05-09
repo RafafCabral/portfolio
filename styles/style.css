@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor--primaria: #000000;
+    --cor--secundaria : #F6F6F6;
+    --cor--tercearia : #22d4fd;
+    --cor--hover : #272727;
+    
+    --fonte--primaria: "Krona One", sans-serif;
+    --fonte--secundaria: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+}
+
+.head {
+    padding: 2% 0% 0% 15%;
+}
+
+.head__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.head__menu__link {
+    font-family: var(--fonte--secundaria);
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: var(--cor--tercearia);
+    text-decoration: none;
+}
+
+.titulo-destaque {
+    color: var(--cor--tercearia)
+}
+
+.container {
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.container__conteudo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.container__conteudo__titulo {
+    font-size: 2.25rem ;
+    font-family: var(--fonte--primaria);
+}
+
+.container__conteudo__paragrafo {
+    font-size: 1.5rem ;
+    font-family: var(--fonte--secundaria);
+}
+
+.container__links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.container__links__h2{
+    font-family: var(--fonte--primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 378px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid var(--cor--tercearia);
+    border-radius: 16px;
+    font-size: 1.5rem;
+    padding: 21.5px 0px;
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--secundaria);
+    font-weight: 600;
+}
+
+.container__links__link:hover {
+    background-color: var(--cor--hover);
+}
+
+.container__imagem {
+    width: 50%;
+}
+
+.foot{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: var(--cor--tercearia);
+    font-family: var(--fonte--secundaria);
+    font-weight: 400;
+    color: var(--cor--primaria);
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    
+    .head {
+        padding: 10%;
+    }
+
+    .head__menu {
+        justify-content: center;
+    }
+    
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container__conteudo {
+        width: auto;
+    }
+}
